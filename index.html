@@ -5,6 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <style>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+  @keyframes typing{
+    from {width:0}
+      to{width:100%}
+  }
+@keyframes pulse{
+  0%,100% {transform:scale(1);}
+  50% {transform:scale(1.1);}
+}
+   </style>
+</head>
+<body style="background-color:rgba(6, 1, 1, 0.933);margin:0px; padding:0px;">
+<nav style="position:fixed;top:0;z-index:1000;width:100%;display:flex;height: 5%; flex:1; align-items:center;
+ background-color:rgb(182, 109, 6); justify-content:space-between; padding:10px;">
+  <img src="assets/sk.png" alt="Logo" style="width:40px; height:40px; border-radius:50%; margin-left:0px;
+   display: inline-block;font-size: 30px; animation: pulse 1.5s 10; ">
+  <div style="display:flex;align-items:center; justify-content:space-around;"></div>
+  <ul style="list-style:none; padding-right:5%; margin:0px; display:flex;font-size: larger;font-weight:800;gap:10px;">
+    <li> <a href="about.html" style="color:navy; text-decoration:underline; margin:10px; padding:0px;">About</a></li>
+    <li> <a href="services.html" style="color:navy; text-decoration:underline; margin:10px; padding:0px;">Services</a></li>
+    <li> <a href="contactMe.html" style="color:navy; text-decoration:underline; margin:10px; padding:0px;">Contact Me</a></li>
+   </li>
+    </div>
+  </ul>
+</nav>
+<div style="color:white;display:flex; margin-top:70px; flex-wrap:wrap;justify-content:space-between;
+ align-items:center;gap:20px; padding:20px;">
+  <div style="flex:1;color:white;">
+    <h1 style=" color:white; border:2px red; font-weight:bold;animation-name:typing;animation-duration:5s;
+    animation-fill-mode: forwards;overflow: hidden;
+    white-space: nowrap;">Hi, my name is Sarah a <span style="color:navy; display: inline-block;font-size: 30px;
+     animation-iteration-count:3;background-color:goldenrod;animation-name:pulse; animation-duration: 1.5s; animation-iteration-count: 7;">
+     UI-UX</span> developer.</h1>
+    <p style="font-style:italic; color:white;">I'm a passionate web developer from Kenya with a keen eye for creativity and detail. 
+      I enjoy building clean, responsive, and user-friendly websites that bring ideas to life on the web. 
+      Beyond coding, I’m inspired by photography, which sharpens my perspective on design, and I love reading novels, which fuels my imagination and storytelling skills.
+      I’m always eager to learn, grow, and collaborate on meaningful projects that make a difference.
+    You can surf throughout my web page and take a look at some of the interesting projects I have done as well as my contact information. </p>
+  </div>
+  <div style="flex:1;width:100%;display:flex;justify-content:center;">
+    <img src="assets/sarahk.jpg" alt="My Profile Picture" style="width:70%; height:auto;border-radius: 100%;">
+  </div>
+</div>
+<a:link,a:visited style="background-color:gold;font-weight: 600;border-color: navy;border-style:dashed;padding:1%;
+margin-left:1.5%;"> 
+  <a href="viewCv.html">VIEW CV</a>
+  
+</div>
+</body></html>
+
   @keyframes typing{
     from {width:0}
       to{width:100%}
