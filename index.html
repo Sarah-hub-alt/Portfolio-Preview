@@ -28,14 +28,10 @@
 </ul>
 
  <script>
-  // Get the current page filename
   const currentPage = window.location.pathname.split("/").pop();
-
-  // Get all nav links
   const navLinks = document.querySelectorAll("ul li a");
 
   navLinks.forEach(link => {
-    // If link href matches current page filename
     if(link.getAttribute("href") === currentPage){
       link.style.backgroundColor = "navy";
       link.style.color = "yellow";
