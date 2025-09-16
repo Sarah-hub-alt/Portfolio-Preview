@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>About Sarah</title>
+ </head>
+ <body style="background-image:url('assets/services.jpeg');background-size: cover;background-repeat:no-repeat;height:100vh;">
+   <nav style="position:fixed;top:0;z-index:1000;width:100%;display:flex;height: 5%; flex:1; align-items:center;
+ background-color:rgb(182, 109, 6); justify-content:space-between; padding:10px;">
+  <img src="assets/sk.png" alt="Logo" style="width:40px; height:40px; border-radius:50%; margin-left:0px;
+   display: inline-block;font-size: 30px; animation: pulse 1.5s 10; ">
+  <div style="display:flex;align-items:center; justify-content:space-around;"></div>
+   <ul style="list-style:none;display:flex;gap:20px;padding:10px;">
+  <li><a href="home.html" style="color:white;padding:10px 20px;text-decoration:none;">Home</a></li>
+  <li><a href="services.html" style="color:white;padding:10px 20px;text-decoration:none;">Services</a></li>
+  <li><a href="about.html" style="color:white;padding:10px 20px;text-decoration:none;">About</a></li>
+  <li><a href="contactMe.html" style="color:white;padding:10px 20px;text-decoration:none;">Contact</a></li>
+</ul>
+
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("ul li a");
+
+  navLinks.forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.style.backgroundColor = "navy";
+      link.style.color = "yellow";
+      link.style.fontWeight = "bold";
+      link.style.borderRadius = "5px";
+    }
+  });
+</script>
+</nav>
+    <h1 style="font-weight:600;color:white;align-items: center;margin-inline-start:20%;padding-top:9%;">Sarah in a nutshell</h1>
+    <p style="color:white;font-size:larger"><b>I am a web developer with a passion for building websites.
+         My interest in technology began with a curiosity about how digital platforms work behind the scenes, 
+         and over time that curiosity grew into a commitment to mastering the craft of web development.
+          I enjoy experimenting with code, learning new frameworks, and exploring creative ways to turn ideas into interactive experiences.<br>
+   Beyond my technical journey, I draw inspiration from photography,
+ which sharpens my ability to notice detail and composition—qualities I carry into my design and coding work. 
+ I also enjoy reading novels, as stories give me fresh perspectives, broaden my imagination, 
+ and encourage me to think critically. These hobbies complement my professional life by shaping how I approach problem-solving and creativity.<br>
+  My goal as a developer is not only to improve my skills but also to contribute to meaningful projects that have a real impact on people.
+ I am enthusiastic about collaborating with others, sharing knowledge,
+  and continually growing in this ever-changing field.<br>
+   For me, web development is more than just code—it is an opportunity to create solutions that are functional, engaging, and purposeful.</b></p>
+ </body>
+</html>
